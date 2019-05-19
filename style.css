@@ -27,20 +27,23 @@ button {
 	max-width: 1600px;
 }
 .mainMenu {
-	position: relative;
-	z-index: 10;
-
+	/*position: relative;*/
+	/*z-index: 20;*/
+	
 }
-/*.mainMenu+div {
+.mainMenu+div {
 	min-height: 70px; 
+	width: 100%;	 
 	padding-right: 14.37%; 
 	padding-left: 14.37%; 
 	background-color: white; 
-	position: fixed;
-	z-index: 8;
-	width: 100%;
-}*/
-
+	position: fixed; 
+	/*z-index: 12;*/
+}
+header .container-fluid {
+	z-index: 3; 
+	position: relative;
+}
 img[alt="logo"] {
 	margin-top: 25px;
 	margin-right: 46px;
@@ -245,13 +248,21 @@ h5 {
 	margin-bottom: 5px;
 	margin-top: 72px;
 }
-
+.card:hover .card-body-hide {
+	display: block;
+}
+.card:hover .card-body {
+	display: none;
+}
 .card-body-hide {
-	height: 149px;
+	/*height: 149px;*/
 	background-color: #503392;
 	display: none;
 }
-
+h5+div {
+	margin: 15% 25% 0 25%;
+	padding-bottom: 10px;
+}
 .rowCard {
 	margin: auto;
 	position: relative;

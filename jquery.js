@@ -1,12 +1,15 @@
 	$(document).ready(function() {
 		(function() { $('option:first').css('display', 'none'); })();
+
 		$('.nav-link').click(function(e) {
 			$('.nav-link').removeClass('activeMenu');
 			$(this).addClass('activeMenu');
 		});
+
 		$('.carousel').carousel({
-			interval: 100000
+			interval: 1000
 		});
+
 		$('#form').validator();
 		$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
 			if (!$(this).next().hasClass('show')) {
@@ -27,9 +30,13 @@
 		for (let i = 0; i < $('.progress-bar').length; i++) {
 			let progressWidth = (($('.progressbar').width()) * (parseInt($('h6>span:eq(' +
 				i + ')').html()))) / 100;
-			$('.progress-bar:eq(' + i + ')').animate({ width: '+=' + progressWidth },
-				1000);
+			$('.progress-bar:eq(' + i + ')').animate({ 
+				width: '+=' + progressWidth,
+				easing: "linear"
+				 }, 1000);
 		}
-		$('h6>span').delay(1000).animate({ opacity: '+=1' }, 1000);
+		$('h6>span').delay(1000).animate({ 
+			opacity: '+=1',
+			easing: "easein" }, 1000);
 		$('#progressbarContainer').removeAttr('onmouseover');
 	}
