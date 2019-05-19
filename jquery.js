@@ -3,7 +3,7 @@
 		$('.nav-link').click(function(e) {
 			$('.nav-link').removeClass('activeMenu');
 			$(this).addClass('activeMenu');
-		})
+		});
 		$('.carousel').carousel({
 			interval: 100000
 		});

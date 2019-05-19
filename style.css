@@ -17,6 +17,9 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+.container-fluid {
+	max-width: 1600px;
+}
 #search {
      box-shadow: none;
 }
@@ -24,8 +27,7 @@ button {
 	max-width: 1600px;
 }
 .mainMenu {
-	position: absolute;
-	
+	position: relative;
 	z-index: 10;
 }
 
@@ -489,6 +491,7 @@ h6 {
 		height: 859px;
 	}
 }
+
 @media (min-width: 960px) and (max-width: 1199px) {
 	/* lg */
 	h1 {
@@ -503,6 +506,7 @@ h6 {
 	.progressbar {
 		width: 100%;
 	}
+
 }
 @media (min-width: 768px) and (max-width: 959px) {
 		/* md */
