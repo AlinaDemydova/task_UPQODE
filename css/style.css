@@ -29,11 +29,15 @@ button {
   background-image: none;
   background-color: lime;
   color: pink;
-  position: relative;
-  z-index: 30;
+ /* position: relative;
+  z-index: 30;*/
 }
-
-.carousel-control-next-icon:after
+.carousel-control-prev {
+	border: 2px solid red;
+	  position: relative;
+  z-index: 50;
+}
+/*.carousel-control-next-icon:after
 {
   content: '>';
   font-size: 55px;
@@ -44,7 +48,7 @@ button {
   content: '<';
   font-size: 55px;
   color: red;
-}
+}*/
 
 
 .container-fluid {
