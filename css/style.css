@@ -17,40 +17,6 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
-  background-color: lime;
-  color: pink;
- /* position: relative;
-  z-index: 30;*/
-}
-.carousel-control-prev {
-	border: 2px solid red;
-	  position: relative;
-  z-index: 50;
-}
-/*.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: red;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: red;
-}*/
-
-
 .container-fluid {
 	max-width: 1600px;
 }
