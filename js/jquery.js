@@ -4,9 +4,11 @@
 			$('.nav-link').removeClass('activeMenu');
 			$(this).addClass('activeMenu');
 		});
+
 		$('.carousel').carousel({
-			interval: 100000
+			interval: 3500
 		});
+
 		$('#form').validator();
 		$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
 			if (!$(this).next().hasClass('show')) {
